@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be Smart Driving Academy | Anchorage, AK Driving School</title>
+  
+  <!-- Primary SEO -->
+  <meta name="title" content="Be Smart Driving Academy | Anchorage, AK" />
+  <meta name="description" content="State-approved driving academy in Anchorage, Alaska. Novice teen courses, 3rd-party DMV road tests, and winter ice driving with Butch Evans." />
+
+  <!-- Fontshare Typography (Strictly from fontshare.com Whitelist) -->
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=red-hat-display@300,400,600,700,900&f[]=sora@200,300,400,600,700,800&f[]=teko@600,700&f[]=satoshi@300,400,500,700,900&f[]=switzer@200,300,400,500,600&f[]=alpino@600,700&f[]=hind@300,400,500,600&display=swap" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deepNavy: '#0A1422',      // Main solid background
+              primaryNavy: '#0B2A4A',   // Alternate sections & borders
+              primaryBlue: '#0E5A8A',   // Headings, Primary buttons, Icons
+              bodyText: '#CBD5E1',      // 100% WCAG AAA high-contrast body text
+              darkCharcoal: '#1E293B',  // Cards & containers
+              deepBlue: '#082F49',      // Elevated cards & hover
+              alertRed: '#F87171',      // High-contrast accessible error red
+              highlightSky: '#38BDF8',  // High-contrast accent
+            }
+          },
+          fontFamily: {
+            headline: ['"Sora"', 'sans-serif'],
+            display: ['"Red Hat Display"', 'sans-serif'],
+            stat: ['"Teko"', 'sans-serif'],
+            body: ['"Switzer"', 'sans-serif'],
+            ui: ['"Satoshi"', 'sans-serif'],
+            eyebrow: ['"Alpino"', 'sans-serif'],
+            label: ['"Hind"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Strict Palette: Deep Navy #0A1422, Primary Blue #0E5A8A, Accent Sky Blue #38BDF8, High-Contrast Text #CBD5E1 */
+    body {
+      background-color: #0A1422;
+      color: #CBD5E1;
+      font-family: 'Switzer', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-title {
+      font-family: 'Sora', sans-serif;
+    }
+    button, input, select, nav a {
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    @keyframes marqueeLeft {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes marqueeRight {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0%); }
+    }
+    .marquee-track-left {
+      display: flex;
+      width: max-content;
+      animation: marqueeLeft 42s linear infinite;
+    }
+    .marquee-track-right {
+      display: flex;
+      width: max-content;
+      animation: marqueeRight 42s linear infinite;
+    }
+    .marquee-pause:hover .marquee-track-left,
+    .marquee-pause:hover .marquee-track-right,
+    .marquee-pause:active .marquee-track-left,
+    .marquee-pause:active .marquee-track-right {
+      animation-play-state: paused;
+    }
+
+    /* Mobile Carousel Clean Scrollbar Hide */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#0A1422] text-white antialiased">
+
+  <!-- =========================================================
+       HERO SECTION: SOLID DEEP NAVY #0A1422 WITH SEAMLESS FLEET
+  ========================================================== -->
+  <div class="relative w-full bg-[#0A1422] flex flex-col justify-start overflow-hidden">
+    
+    <!-- 1. CLEAN INTEGRATED HEADER (NO SEPARATE BG BOX, SITS DIRECTLY ON PAGE BG) -->
+    <header class="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 py-3 sm:py-4 flex items-center justify-between z-30 relative">
+      
+      <!-- Left: Prominent Large Visual Logo (Directly on Page BG) -->
+      <a href="#" class="flex items-center group py-1" aria-label="Be Smart Driving Academy Home">
+        <img 
+          src="./assets/logo-dark-mode-vector.png" 
+          onerror="this.src='./assets/logo.png'"
+          alt="Be Smart Driving Academy" 
+          class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-md" 
+        />
+      </a>
+
+      <!-- Right Side: Exact 3 Heading Buttons (Bold & Large) + Solid Call Button (Desktop) -->
+      <div class="hidden lg:flex items-center gap-9">
+        <nav class="flex items-center gap-8 text-base sm:text-[17px] font-bold font-ui text-[#CBD5E1]">
+          <!-- 1. Home (Active link with cyan underline indicator) -->
+          <a href="#" class="relative py-1 text-white font-extrabold transition hover:text-[#38BDF8]">
+            Home
+            <span class="absolute -bottom-1 left-0 w-full h-[2.5px] bg-[#38BDF8] rounded-full"></span>
+          </a>
+
+          <!-- 2. Programs Dropdown (Counterpart to Storage Options ▾ in reference) -->
+          <div class="relative group">
+            <button type="button" class="flex items-center gap-1.5 py-1 text-[#CBD5E1] hover:text-[#38BDF8] font-bold transition focus:outline-none">
+              <span>Programs</span>
+              <svg class="w-4 h-4 text-[#CBD5E1] group-hover:text-[#38BDF8] group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            <!-- Floating Dropdown Panel -->
+            <div class="absolute left-0 top-full pt-2.5 hidden group-hover:block hover:block z-50 min-w-[270px]">
+              <div class="bg-[#0B2A4A] rounded-xl shadow-2xl border border-[#0E5A8A] p-2 space-y-1 text-left">
+                <a href="#courses" class="flex flex-col px-3.5 py-2.5 rounded-lg hover:bg-[#0E5A8A]/40 transition">
+                  <span class="text-sm font-bold text-white">16-Hour Novice Course</span>
+                  <span class="text-xs text-[#38BDF8] font-normal">Teens 14+ & First-Time Drivers</span>
+                </a>
+                <a href="#courses" class="flex flex-col px-3.5 py-2.5 rounded-lg hover:bg-[#0E5A8A]/40 transition">
+                  <span class="text-sm font-bold text-white">DMV Road Test Bypass</span>
+                  <span class="text-xs text-[#38BDF8] font-normal">Official 3rd-Party Certified Examiner</span>
+                </a>
+                <a href="#courses" class="flex flex-col px-3.5 py-2.5 rounded-lg hover:bg-[#0E5A8A]/40 transition">
+                  <span class="text-sm font-bold text-white">Winter Driving Safety</span>
+                  <span class="text-xs text-[#38BDF8] font-normal">Alaska Ice, Snow & Skid Control</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Reserve (Clean text link matching reference) -->
+          <a href="#fast-book" class="py-1 text-[#CBD5E1] hover:text-[#38BDF8] font-bold transition">
+            Reserve
+          </a>
+        </nav>
+
+        <!-- Primary Call Button (Brand Blue with Increased Text Size) -->
+        <a href="tel:9078683151" class="bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white px-6 py-2.5 rounded-xl text-sm sm:text-[15px] font-black tracking-wide uppercase transition hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm font-ui border border-[#38BDF8]/40 flex items-center gap-2">
+          <span>Call Us 907-868-3151</span>
+        </a>
+      </div>
+
+      <!-- Mobile Right: Quick Call Pill + Hamburger Toggle -->
+      <div class="flex lg:hidden items-center gap-2">
+        <a href="tel:9078683151" class="bg-[#0E5A8A] text-white px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm border border-[#38BDF8]/40">
+          <svg class="w-3.5 h-3.5 text-[#38BDF8]" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          <span>Call</span>
+        </a>
+        <button onclick="toggleMobileMenu()" class="p-2 text-white hover:text-[#38BDF8] rounded-xl hover:bg-[#0E5A8A]/30 transition focus:outline-none" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden max-w-[1440px] mx-auto px-4 sm:px-8 py-4 bg-[#0A1422] border-b border-[#0B2A4A] space-y-3 font-ui font-semibold text-sm transition-all text-left z-20">
+      <a href="#" onclick="toggleMobileMenu()" class="block text-white font-bold border-l-2 border-[#38BDF8] pl-2.5">Home</a>
+      <div class="pt-1 pb-1">
+        <span class="text-[11px] uppercase tracking-wider text-[#38BDF8] font-bold block mb-1">Programs</span>
+        <div class="pl-2.5 space-y-2 border-l border-[#0E5A8A] ml-1">
+          <a href="#courses" onclick="toggleMobileMenu()" class="block text-[#CBD5E1] hover:text-white">16-Hour Novice Course</a>
+          <a href="#courses" onclick="toggleMobileMenu()" class="block text-[#CBD5E1] hover:text-white">DMV Road Test Bypass</a>
+          <a href="#courses" onclick="toggleMobileMenu()" class="block text-[#CBD5E1] hover:text-white">Winter Driving Safety</a>
+        </div>
+      </div>
+      <a href="#fast-book" onclick="toggleMobileMenu()" class="block text-[#CBD5E1] hover:text-white">Reserve</a>
+      <a href="tel:9078683151" class="block w-full text-center bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white py-2.5 rounded-lg font-bold tracking-wide mt-2 border border-[#38BDF8]/40 transition">
+        Call Us 907-868-3151
+      </a>
+    </div>
+
+    <!-- 2. MAIN HERO CONTENT AREA (STRICT 2-LINE TITLE + EXPANDED BUTTON WIDGET) -->
+    <main class="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16 pt-8 sm:pt-14 flex flex-col items-center text-center z-10">
+
+      <!-- HEADLINE (Mobile: 3 Impactful Lines text-[36px] | Desktop: 2 Lines text-[88px]) -->
+      <h1 class="w-full font-headline font-black text-[36px] sm:text-5xl md:text-6xl lg:text-[76px] xl:text-[88px] tracking-tight uppercase leading-[1.06] text-center max-w-5xl mx-auto">
+        <!-- Mobile 3-Line Presentation (Balanced & Large) -->
+        <span class="block sm:hidden text-white">Master Alaska</span>
+        <span class="block sm:hidden text-white mt-1">Roads With</span>
+        <span class="block sm:hidden text-[#38BDF8] mt-1">Confidence</span>
+        <!-- Tablet & Desktop 2-Line Presentation -->
+        <span class="hidden sm:block whitespace-nowrap text-white">Master Alaska Roads</span>
+        <span class="hidden sm:block whitespace-nowrap text-white mt-1 sm:mt-2">With <span class="text-[#38BDF8]">Confidence</span></span>
+      </h1>
+
+      <!-- Supporting Description: High Contrast -->
+      <p class="text-[#CBD5E1] text-xs sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed mt-3 sm:mt-5 font-medium px-2">
+        State-approved novice teen training, certified third-party DMV road testing, and winter ice driving safety in Anchorage with veteran instructor Butch Evans.
+      </p>
+
+      <!-- EXPANDED BUTTON WIDGET (Image 2 Exact Layout, Dedicated Background for Both Action & Phone) -->
+      <div class="mt-5 sm:mt-8 w-full max-w-2xl mx-auto px-2">
+        <div class="border-2 border-dashed border-[#0E5A8A] rounded-2xl p-3 sm:p-5 bg-[#0B2A4A] flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6">
+          
+          <!-- Left: Primary Action Button (Increased Height & Padding) -->
+          <a href="#courses" class="w-full sm:w-auto bg-[#0E5A8A] hover:bg-[#082F49] text-white font-headline font-bold text-base sm:text-lg uppercase tracking-wider px-6 sm:px-10 py-3.5 sm:py-5 min-h-[54px] sm:min-h-[64px] rounded-xl transition border border-[#38BDF8]/40 shrink-0 flex items-center justify-center text-center">
+            Choose Your Course
+          </a>
+
+          <!-- Middle: Vertical Separator with "or" -->
+          <div class="hidden sm:flex flex-col items-center justify-center text-xs font-bold text-[#38BDF8] uppercase px-1 shrink-0">
+            <div class="h-4 w-px bg-[#0E5A8A]"></div>
+            <span class="py-1 text-[#38BDF8]">or</span>
+            <div class="h-4 w-px bg-[#0E5A8A]"></div>
+          </div>
+
+          <!-- Mobile Divider -->
+          <div class="sm:hidden text-xs font-bold text-[#38BDF8] uppercase tracking-wider my-0.5">
+            — OR —
+          </div>
+
+          <!-- Right: Subtitle + Phone with Same Background (#0B2A4A) as the whole button widget -->
+          <a href="tel:9078683151" class="w-full sm:w-auto bg-[#0B2A4A] hover:bg-[#0E5A8A]/30 rounded-xl px-4 sm:px-6 py-2 sm:py-3 flex flex-col items-center sm:items-start transition group shrink-0">
+            <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-[#38BDF8] whitespace-nowrap">
+              Call Or Text Us
+            </span>
+            <span class="font-headline font-black text-xl sm:text-2xl text-white group-hover:text-[#38BDF8] tracking-tight transition whitespace-nowrap mt-0.5">
+              (907) 868-3151
+            </span>
+          </a>
+
+        </div>
+      </div>
+
+    </main>
+
+    <!-- 3. ULTRA-HD BE SMART TRAINING CAR (Natural Studio Ground Contact Shadow, 100% Solid #0A1422 Background) -->
+    <div class="relative w-full mt-1 sm:mt-2 pb-0 flex justify-center items-end bg-[#0A1422] overflow-hidden">
+      <div class="w-full max-w-[1560px] 2xl:max-w-[1720px] mx-auto px-0 sm:px-4 md:px-6">
+        <img 
+          src="./assets/hero-car-besmart-fixed.png" 
+          alt="Be Smart Driving Academy Official Training Car" 
+          class="w-full h-auto object-contain object-bottom block"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================================================
+       SECTION: DRIVING PROGRAMS (STATE-CERTIFIED COURSES & DMV TESTING)
+       - 100% Solid #0A1422 Background (Exact match with Hero)
+       - Title: DRIVING PROGRAMS
+       - Clean Centered Introductory Paragraph & Reassurance Badges
+       - Cards with Rounded Image -> Uppercase Title -> Centered Description -> Centered Solid Button
+       - Top Row: 3 Cards | Bottom Row: 2 Cards Centered
+  ========================================================== -->
+  <section id="courses" class="relative w-full py-16 sm:py-24 bg-[#0A1422] overflow-hidden">
+    
+    <!-- Constrained Container (max-w-[1240px] gives cards and images extra breathing room while staying vertical) -->
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight uppercase leading-none">
+          OUR SPECIALITIES
+        </h2>
+        <p class="mt-5 text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+          Be Smart Driving Academy delivers quality state-approved novice driver education, certified 3rd-party DMV road testing, and specialized winter ice safety training to students and families across Anchorage, Eagle River, and the greater Mat-Su area. We keep pricing upfront and scheduling simple, so your driving journey stays on track from day one.
+        </p>
+      </div>
+
+      <!-- =========================================================
+           MOBILE ONLY: 1-CARD AT A TIME AUTO & MANUAL SLIDING CAROUSEL
+      ========================================================== -->
+      <div class="block md:hidden w-full relative mb-10">
+        <!-- Slider Container with Snap & Smooth Scroll -->
+        <div id="courseMobileSlider" class="w-full flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar gap-4 pb-2">
+          
+          <!-- MOBILE SLIDE 1: 16-HOUR NOVICE DRIVER COURSE -->
+          <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
+            <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
+              <img 
+                src="./assets/instructor-car.webp" 
+                alt="16-Hour Novice Driver Course in Anchorage" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-headline font-black text-2xl text-white uppercase text-center leading-tight tracking-tight mb-3">
+              16-HOUR NOVICE DRIVER COURSE
+            </h3>
+            <p class="text-xs text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+              State of Alaska approved complete curriculum for first-time teen and adult drivers. From 8 hours of in-depth classroom safety theory to 8 hours of 1-on-1 dual-control in-car driving with Butch Evans, plus your official State DMV Road Test included with up to 40% insurance discount.
+            </p>
+            <div class="flex justify-center mt-auto pt-2">
+              <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs uppercase tracking-widest py-3.5 px-6 rounded-lg border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- MOBILE SLIDE 2: DMV THIRD-PARTY ROAD TESTS -->
+          <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
+            <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
+              <img 
+                src="./assets/dmv-road-test-pass.jpg" 
+                alt="Official DMV Third-Party Road Test in Anchorage" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-headline font-black text-2xl text-white uppercase text-center leading-tight tracking-tight mb-3">
+              DMV THIRD-PARTY ROAD TESTS
+            </h3>
+            <p class="text-xs text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+              Skip weeks of state DMV wait lines and get your official Alaska driver's license on your schedule. We administer certified third-party road tests in a calm, stress-free environment using our dual-control vehicles or your own, with same-day paperwork filed directly with the DMV.
+            </p>
+            <div class="flex justify-center mt-auto pt-2">
+              <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs uppercase tracking-widest py-3.5 px-6 rounded-lg border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- MOBILE SLIDE 3: ALASKA WINTER DRIVING SAFETY -->
+          <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
+            <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
+              <img 
+                src="./assets/winter-driving.webp" 
+                alt="Alaska Winter Driving Safety Training in Anchorage" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-headline font-black text-2xl text-white uppercase text-center leading-tight tracking-tight mb-3">
+              ALASKA WINTER DRIVING SAFETY
+            </h3>
+            <p class="text-xs text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+              Master Alaska's most treacherous winter roads with confidence. Specialized behind-the-wheel instruction covering black ice skid recovery, 8–10 second following distance rules, threshold braking, and emergency survival tactics. Essential for new Alaska residents and JBER military.
+            </p>
+            <div class="flex justify-center mt-auto pt-2">
+              <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs uppercase tracking-widest py-3.5 px-6 rounded-lg border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- MOBILE SLIDE 4: DEFENSIVE DRIVING & DIP -->
+          <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
+            <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
+              <img 
+                src="./assets/classroom.webp" 
+                alt="Defensive Driving Class and Ticket Dismissal" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-headline font-black text-2xl text-white uppercase text-center leading-tight tracking-tight mb-3">
+              DEFENSIVE DRIVING & DIP
+            </h3>
+            <p class="text-xs text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+              Alaska court-approved Driver Improvement Program (DIP). Clear moving violation demerit points from your official driving record, satisfy court requirements, and lower your annual auto insurance premium rates with our certified single-day intensive course.
+            </p>
+            <div class="flex justify-center mt-auto pt-2">
+              <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs uppercase tracking-widest py-3.5 px-6 rounded-lg border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- MOBILE SLIDE 5: PRIVATE 1-ON-1 LESSONS -->
+          <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
+            <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
+              <img 
+                src="./assets/private-driving-lesson-real.jpg" 
+                alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-headline font-black text-2xl text-white uppercase text-center leading-tight tracking-tight mb-3">
+              PRIVATE 1-ON-1 LESSONS
+            </h3>
+            <p class="text-xs text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+              Customized behind-the-wheel coaching tailored for nervous teens and adult beginners. Focus on parallel parking, highway merging, multi-lane roundabouts, and confidence building with veteran instructor Butch Evans at your personal pace.
+            </p>
+            <div class="flex justify-center mt-auto pt-2">
+              <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs uppercase tracking-widest py-3.5 px-6 rounded-lg border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+                BOOK NOW
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Navigation Controls: Prev/Next Buttons + Dots Counter -->
+        <div class="flex items-center justify-between mt-4 px-2">
+          <button type="button" onclick="slideCoursePrev()" aria-label="Previous Course" class="w-10 h-10 rounded-xl bg-[#0B2544] border border-[#17325D] text-[#38BDF8] flex items-center justify-center transition shadow-md active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+
+          <!-- 5 Dynamic Pagination Dots -->
+          <div id="courseSliderDots" class="flex items-center gap-2">
+            <button onclick="goToCourseSlide(0)" class="w-7 h-2 rounded-full bg-[#38BDF8] transition-all duration-300" aria-label="Slide 1"></button>
+            <button onclick="goToCourseSlide(1)" class="w-2 h-2 rounded-full bg-[#17325D] transition-all duration-300" aria-label="Slide 2"></button>
+            <button onclick="goToCourseSlide(2)" class="w-2 h-2 rounded-full bg-[#17325D] transition-all duration-300" aria-label="Slide 3"></button>
+            <button onclick="goToCourseSlide(3)" class="w-2 h-2 rounded-full bg-[#17325D] transition-all duration-300" aria-label="Slide 4"></button>
+            <button onclick="goToCourseSlide(4)" class="w-2 h-2 rounded-full bg-[#17325D] transition-all duration-300" aria-label="Slide 5"></button>
+          </div>
+
+          <button type="button" onclick="slideCourseNext()" aria-label="Next Course" class="w-10 h-10 rounded-xl bg-[#0B2544] border border-[#17325D] text-[#38BDF8] flex items-center justify-center transition shadow-md active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- =========================================================
+           DESKTOP & TABLET GRID (HIDDEN ON MOBILE)
+      ========================================================== -->
+      <div class="hidden md:block">
+
+      <!-- =========================================================
+           TOP ROW: 3 COMPACT VERTICAL CARDS WITH HORIZONTAL IMAGES
+      ========================================================== -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10 items-stretch">
+        
+        <!-- CARD 1: 16-HOUR NOVICE DRIVER COURSE -->
+        <div class="bg-[#0B2544] border border-[#17325D] p-4 sm:p-5 pb-9 sm:pb-10 min-h-[590px] sm:min-h-[630px] flex flex-col justify-between hover:border-[#38BDF8]/60 transition duration-300 group shadow-xl text-center">
+          
+          <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
+          <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
+            <img 
+              src="./assets/instructor-car.webp" 
+              alt="16-Hour Novice Driver Course in Anchorage" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- 2. HEADLINE (Pure White, Bold, Uppercase, Centered) -->
+          <h3 class="font-headline font-black text-2xl sm:text-[26px] lg:text-[28px] text-white uppercase text-center leading-tight tracking-tight mb-3.5">
+            16-HOUR NOVICE DRIVER COURSE
+          </h3>
+
+          <!-- 3. DESCRIPTION (Centered clean paragraph) -->
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+            State of Alaska approved complete curriculum for first-time teen and adult drivers. From 8 hours of in-depth classroom safety theory to 8 hours of 1-on-1 dual-control in-car driving with Butch Evans, plus your official State DMV Road Test included with up to 40% insurance discount.
+          </p>
+
+          <!-- 4. BUTTON (Uniform 2-Word Name: BOOK NOW, Sharp Rectangular, Centered) -->
+          <div class="flex justify-center mt-auto pt-2">
+            <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-widest py-3.5 px-6 border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+              BOOK NOW
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CARD 2: DMV THIRD-PARTY ROAD TESTS -->
+        <div class="bg-[#0B2544] border border-[#17325D] p-4 sm:p-5 pb-9 sm:pb-10 min-h-[590px] sm:min-h-[630px] flex flex-col justify-between hover:border-[#38BDF8]/60 transition duration-300 group shadow-xl text-center">
+          
+          <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
+          <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
+            <img 
+              src="./assets/dmv-road-test-pass.jpg" 
+              alt="Official DMV Third-Party Road Test in Anchorage" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- 2. HEADLINE (Pure White, Bold, Uppercase, Centered) -->
+          <h3 class="font-headline font-black text-2xl sm:text-[26px] lg:text-[28px] text-white uppercase text-center leading-tight tracking-tight mb-3.5">
+            DMV THIRD-PARTY ROAD TESTS
+          </h3>
+
+          <!-- 3. DESCRIPTION (Centered clean paragraph) -->
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+            Skip weeks of state DMV wait lines and get your official Alaska driver's license on your schedule. We administer certified third-party road tests in a calm, stress-free environment using our dual-control vehicles or your own, with same-day paperwork filed directly with the DMV.
+          </p>
+
+          <!-- 4. BUTTON (Uniform 2-Word Name: BOOK NOW, Sharp Rectangular, Centered) -->
+          <div class="flex justify-center mt-auto pt-2">
+            <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-widest py-3.5 px-6 border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+              BOOK NOW
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CARD 3: ALASKA WINTER DRIVING SAFETY -->
+        <div class="bg-[#0B2544] border border-[#17325D] p-4 sm:p-5 pb-9 sm:pb-10 min-h-[590px] sm:min-h-[630px] flex flex-col justify-between hover:border-[#38BDF8]/60 transition duration-300 group shadow-xl text-center">
+          
+          <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
+          <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
+            <img 
+              src="./assets/winter-driving.webp" 
+              alt="Alaska Winter Driving Safety Training in Anchorage" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- 2. HEADLINE (Pure White, Bold, Uppercase, Centered) -->
+          <h3 class="font-headline font-black text-2xl sm:text-[26px] lg:text-[28px] text-white uppercase text-center leading-tight tracking-tight mb-3.5">
+            ALASKA WINTER DRIVING SAFETY
+          </h3>
+
+          <!-- 3. DESCRIPTION (Centered clean paragraph) -->
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+            Master Alaska's most treacherous winter roads with confidence. Specialized behind-the-wheel instruction covering black ice skid recovery, 8–10 second following distance rules, threshold braking, and emergency survival tactics. Essential for new Alaska residents and JBER military.
+          </p>
+
+          <!-- 4. BUTTON (Uniform 2-Word Name: BOOK NOW, Sharp Rectangular, Centered) -->
+          <div class="flex justify-center mt-auto pt-2">
+            <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-widest py-3.5 px-6 border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+              BOOK NOW
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- =========================================================
+           BOTTOM ROW: 2 CARDS (CENTERED UNDER TOP ROW, EXACT SAME CARD WIDTH)
+      ========================================================== -->
+      <div class="flex flex-col lg:flex-row justify-center items-stretch gap-6 sm:gap-8">
+        
+        <!-- CARD 4: DEFENSIVE DRIVING & DIP -->
+        <div class="w-full lg:w-[calc(33.333%-1.33rem)] bg-[#0B2544] border border-[#17325D] p-4 sm:p-5 pb-9 sm:pb-10 min-h-[590px] sm:min-h-[630px] flex flex-col justify-between hover:border-[#38BDF8]/60 transition duration-300 group shadow-xl text-center">
+          
+          <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
+          <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
+            <img 
+              src="./assets/classroom.webp" 
+              alt="Defensive Driving Class and Ticket Dismissal" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- 2. HEADLINE (Pure White, Bold, Uppercase, Centered) -->
+          <h3 class="font-headline font-black text-2xl sm:text-[26px] lg:text-[28px] text-white uppercase text-center leading-tight tracking-tight mb-3.5">
+            DEFENSIVE DRIVING & DIP
+          </h3>
+
+          <!-- 3. DESCRIPTION (Centered clean paragraph) -->
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+            Alaska court-approved Driver Improvement Program (DIP). Clear moving violation demerit points from your official driving record, satisfy court requirements, and lower your annual auto insurance premium rates with our certified single-day intensive course.
+          </p>
+
+          <!-- 4. BUTTON (Uniform 2-Word Name: BOOK NOW, Sharp Rectangular, Centered) -->
+          <div class="flex justify-center mt-auto pt-2">
+            <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-widest py-3.5 px-6 border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+              BOOK NOW
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CARD 5: PRIVATE 1-ON-1 BEHIND-THE-WHEEL LESSONS -->
+        <div class="w-full lg:w-[calc(33.333%-1.33rem)] bg-[#0B2544] border border-[#17325D] p-4 sm:p-5 pb-9 sm:pb-10 min-h-[590px] sm:min-h-[630px] flex flex-col justify-between hover:border-[#38BDF8]/60 transition duration-300 group shadow-xl text-center">
+          
+          <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
+          <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
+            <img 
+              src="./assets/private-driving-lesson-real.jpg" 
+              alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- 2. HEADLINE (Pure White, Bold, Uppercase, Centered) -->
+          <h3 class="font-headline font-black text-2xl sm:text-[26px] lg:text-[28px] text-white uppercase text-center leading-tight tracking-tight mb-3.5">
+            PRIVATE 1-ON-1 LESSONS
+          </h3>
+
+          <!-- 3. DESCRIPTION (Centered clean paragraph) -->
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed text-center mb-6 flex-1">
+            Customized behind-the-wheel coaching tailored for nervous teens and adult beginners. Focus on parallel parking, highway merging, multi-lane roundabouts, and confidence building with veteran instructor Butch Evans at your personal pace.
+          </p>
+
+          <!-- 4. BUTTON (Uniform 2-Word Name: BOOK NOW, Sharp Rectangular, Centered) -->
+          <div class="flex justify-center mt-auto pt-2">
+            <button onclick="openCallbackModal()" class="w-full max-w-[200px] bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-widest py-3.5 px-6 border border-[#38BDF8]/40 transition duration-200 shadow-md text-center">
+              BOOK NOW
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div> <!-- /hidden md:block -->
+
+      <!-- Bottom Reassurance & Immediate Phone Action Bar (Zero Border-Radius) -->
+      <div class="mt-14 sm:mt-18 max-w-4xl mx-auto bg-[#0B2544] border-2 border-[#0E5A8A] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl text-center md:text-left">
+        <div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+          <div class="w-12 h-12 bg-[#0A1422] border border-[#38BDF8]/60 flex items-center justify-center text-[#38BDF8] shrink-0 mx-auto md:mx-0">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-headline font-bold text-lg sm:text-xl text-white uppercase tracking-wide">NEED A CUSTOM LESSON OR QUICK QUESTION?</h4>
+            <p class="text-xs sm:text-sm text-[#CBD5E1] mt-1">Speak directly with Butch Evans. No upfront deposit required to check schedule.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 shrink-0 w-full sm:w-auto">
+          <a href="tel:9078683151" class="font-headline font-black text-xl text-white hover:text-[#38BDF8] transition whitespace-nowrap">
+            (907) 868-3151
+          </a>
+          <button onclick="openCallbackModal()" class="w-full sm:w-auto bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-ui font-bold text-xs uppercase tracking-wider px-5 py-3 transition border-2 border-[#38BDF8]/50 whitespace-nowrap">
+            REQUEST CALLBACK
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       SECTION 4: MEET THE OWNER (EXACT REFERENCE: TEXT LEFT, PHOTO RIGHT)
+  ========================================================== -->
+  <section id="about" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        
+        <!-- Left Column: Text & Story (7 Cols, Center-to-Center Aligned) -->
+        <div class="lg:col-span-7 flex flex-col justify-center items-center text-center my-auto">
+          
+          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-[#38BDF8] tracking-tight uppercase leading-none mb-3 text-center">
+            MEET THE OWNER
+          </h2>
+          
+          <div class="text-xl sm:text-2xl font-headline font-bold text-white uppercase tracking-wide mb-6 text-center">
+            HEY, I'M BUTCH
+          </div>
+
+          <div class="space-y-5 text-sm sm:text-base lg:text-lg text-[#CBD5E1] font-body leading-relaxed text-center max-w-2xl">
+            <p>
+              I'm a longtime Alaskan, and I've watched Anchorage grow into one of the most vibrant places for families to put down roots. That love for this community and keeping our roads safe is exactly why I started Be Smart Driving Academy over 20 years ago.
+            </p>
+            <p>
+              Whether you've been here your whole life or just moved to Alaska, we want to help make your driving journey feel safe, calm, and truly yours — a skill where teens can gain independence and parents can rest easy without a second thought. We're not out to collect a check and move on; every student gets clear communication, dependable coaching, and the same care we'd want for our own family. We're proud to serve our neighbors throughout Anchorage and build safe driving habits — and relationships — that are made to last.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Owner Portrait Photo (5 Cols, Vertically Centered, No Overlays) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end my-auto">
+          <div class="w-full max-w-[420px] h-[460px] sm:h-[520px] bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl">
+            <img 
+              src="./assets/butch-evans-real.jpg" 
+              alt="Butch Evans - Owner of Be Smart Driving Academy" 
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Clean Subtle Divider Between Sections (Exact Reference Layout) -->
+  <div class="w-full bg-[#0A1422]">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
+      <div class="border-t border-[#0B2A4A]/80"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       SECTION 5: WHY CHOOSE BE SMART DRIVING ACADEMY? (EXACT REFERENCE: SQUARE PHOTO LEFT, CHECKLIST RIGHT)
+  ========================================================== -->
+  <section id="why-choose" class="relative w-full py-16 sm:py-24 bg-[#0A1422] overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        
+        <!-- Left Column: Real Academy Monument Signboard Photo (5 Cols, Perfect 1:1 Square, Vertically Centered) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-start my-auto">
+          <div class="w-full max-w-[440px] aspect-square bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group hover:border-[#38BDF8] transition duration-300">
+            <img 
+              src="./assets/be-smart-monument-sign.jpg" 
+              alt="Be Smart Driving Academy Monument Signboard - Anchorage, Alaska" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+
+        <!-- Right Column: Headline & Checklist (7 Cols, Center-to-Center Aligned) -->
+        <div class="lg:col-span-7 flex flex-col justify-center items-center my-auto">
+          
+          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight uppercase leading-tight mb-8 text-center">
+            WHY CHOOSE <span class="text-[#38BDF8]">BE SMART DRIVING ACADEMY?</span>
+          </h2>
+
+          <!-- Checklist (Clean Center-Aligned Container) -->
+          <div class="space-y-4 sm:space-y-5 max-w-xl mx-auto">
+            
+            <!-- Item 1: Fair Pricing -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">Fair Pricing —</strong> the quote you get is the price you pay, no hidden fees or surprise test-day add-ons.
+              </p>
+            </div>
+
+            <!-- Item 2: Local In-House Team / State Certified -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">State-Certified 3rd-Party Testers —</strong> skip 4 to 6 weeks of DMV waiting lines; take your official road test on your schedule.
+              </p>
+            </div>
+
+            <!-- Item 3: Dual-Control Fleet -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">Dual-Control Safety Fleet —</strong> instructor passenger-side dual-brake controls give nervous beginners 100% peace of mind.
+              </p>
+            </div>
+
+            <!-- Item 4: Insurance Discount -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">Up to 40% Insurance Discount —</strong> our State of Alaska DMV-approved 16-hour novice certificate significantly lowers teenage insurance rates.
+              </p>
+            </div>
+
+            <!-- Item 5: Built for Alaska Weather -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">Built for Alaska Weather —</strong> quality winter driving coaching for black ice skid recovery, threshold braking, and low-traction steering.
+              </p>
+            </div>
+
+            <!-- Item 6: Generational Trust -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-md bg-[#0B2A4A] border-2 border-[#38BDF8] text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <p class="text-sm sm:text-base text-[#CBD5E1] font-body leading-relaxed">
+                <strong class="text-white font-bold">20+ Years of Local Trust —</strong> Butch taught Anchorage parents two decades ago and is proudly trusted to teach their teenagers today.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       SECTION 6: FINAL FAST CALL / BOOK (MINIMAL 3-STEP PROGRESSIVE BOOKING)
+       Strict Color Mandate: Solid Deep Navy #0A1422, Cards #0B2544, Inner Wells #061421, Accents #38BDF8 & #0E5A8A
+  ========================================================== -->
+  <section id="fast-book" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+    <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header (Extra-Wide Billboard Scale, Strict 2 Lines, Switzer Light Lowercase Appointment) -->
+      <div class="text-center w-full max-w-full mx-auto mb-10 sm:mb-14 px-2">
+        <h2 class="w-full text-center leading-[1.04]">
+          <span class="block font-headline font-black text-white text-[32px] sm:text-4xl md:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] tracking-tight uppercase">FAST-TRACK YOUR DRIVING</span>
+          <span class="block text-[#38BDF8] text-[44px] sm:text-5xl md:text-6xl lg:text-[76px] xl:text-[90px] 2xl:text-[102px] tracking-normal mt-1 sm:mt-2.5 lowercase" style="font-family: 'Switzer', sans-serif; font-weight: 300;">appointment</span>
+        </h2>
+        <p class="mt-5 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#CBD5E1] font-body max-w-2xl mx-auto leading-relaxed text-center">
+          Reserve your slot in under 60 seconds with zero upfront deposit. Butch Evans personally confirms your date within 15 minutes.
+        </p>
+      </div>
+
+      <!-- Centered Booking Flow Container -->
+      <div class="w-full max-w-[840px] mx-auto">
+
+      <!-- 1. Minimal 3-Step Booking Card (Top on All Screens) -->
+      <div class="bg-[#0B2544] border-2 border-[#17325D] p-6 sm:p-10 rounded-2xl shadow-2xl relative">
+        
+        <!-- Step Progress Header -->
+        <div id="stepProgressContainer" class="mb-8">
+          <div class="flex items-center justify-between mb-3 text-xs font-headline font-bold uppercase tracking-wider">
+            <span id="stepLabel1" class="text-[#38BDF8] flex items-center gap-1.5 transition-colors">
+              <span class="w-5 h-5 rounded-full bg-[#38BDF8] text-[#0A1422] text-[10px] font-black flex items-center justify-center">1</span>
+              <span>Program</span>
+            </span>
+            <span id="stepLabel2" class="text-[#94A3B8] flex items-center gap-1.5 transition-colors">
+              <span id="stepBadge2" class="w-5 h-5 rounded-full bg-[#061421] border border-[#38BDF8]/40 text-white text-[10px] font-black flex items-center justify-center">2</span>
+              <span>Contact</span>
+            </span>
+            <span id="stepLabel3" class="text-[#94A3B8] flex items-center gap-1.5 transition-colors">
+              <span id="stepBadge3" class="w-5 h-5 rounded-full bg-[#061421] border border-[#38BDF8]/40 text-white text-[10px] font-black flex items-center justify-center">3</span>
+              <span>Schedule</span>
+            </span>
+          </div>
+
+          <div class="w-full h-1.5 bg-[#061421] rounded-full overflow-hidden border border-[#17325D]">
+            <div id="stepProgress" class="h-full bg-gradient-to-r from-[#0E5A8A] to-[#38BDF8] transition-all duration-300 w-1/3"></div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             STEP 1: SELECT PROGRAM (CLICK TO CHOOSE, ZERO TYPING)
+        ========================================================== -->
+        <div id="formStep1" class="transition-all duration-300">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-headline font-black text-xl sm:text-2xl text-white uppercase tracking-tight">
+              1. Select Your Program
+            </h3>
+            <span class="text-[11px] font-bold text-[#38BDF8] uppercase tracking-wider bg-[#061421] px-2.5 py-1 rounded border border-[#0E5A8A]">
+              1 Click
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body mb-6">
+            Click your preferred training or road test option below.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            <!-- Option 1: DMV Road Test -->
+            <label class="program-card relative flex items-start gap-3.5 p-4 rounded-xl bg-[#081F36] border-2 border-[#38BDF8] hover:border-[#38BDF8] cursor-pointer transition-all duration-200 select-none">
+              <input type="radio" name="programChoice" value="dmv-test" class="sr-only" checked onchange="handleProgramChange(this)" />
+              <div class="radio-dot w-5 h-5 rounded-full border-2 border-[#38BDF8] bg-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-2 h-2 rounded-full bg-[#0A1422]"></div>
+              </div>
+              <div>
+                <span class="block text-sm font-headline font-bold text-white uppercase">DMV Road Test</span>
+                <span class="block text-xs text-[#CBD5E1] font-body mt-0.5">Certified 3rd-party test &bull; Skip 4–6 wk wait</span>
+              </div>
+            </label>
+
+            <!-- Option 2: 16-Hour Course -->
+            <label class="program-card relative flex items-start gap-3.5 p-4 rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition-all duration-200 select-none">
+              <input type="radio" name="programChoice" value="novice-16h" class="sr-only" onchange="handleProgramChange(this)" />
+              <div class="radio-dot w-5 h-5 rounded-full border-2 border-[#17325D] bg-transparent flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-2 h-2 rounded-full bg-transparent"></div>
+              </div>
+              <div>
+                <span class="block text-sm font-headline font-bold text-white uppercase">16-Hour Novice Course</span>
+                <span class="block text-xs text-[#CBD5E1] font-body mt-0.5">Complete teen / adult course &bull; 40% ins. discount</span>
+              </div>
+            </label>
+
+            <!-- Option 3: Winter Driving -->
+            <label class="program-card relative flex items-start gap-3.5 p-4 rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition-all duration-200 select-none">
+              <input type="radio" name="programChoice" value="winter" class="sr-only" onchange="handleProgramChange(this)" />
+              <div class="radio-dot w-5 h-5 rounded-full border-2 border-[#17325D] bg-transparent flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-2 h-2 rounded-full bg-transparent"></div>
+              </div>
+              <div>
+                <span class="block text-sm font-headline font-bold text-white uppercase">Alaska Winter Driving</span>
+                <span class="block text-xs text-[#CBD5E1] font-body mt-0.5">Black ice drills & skid recovery</span>
+              </div>
+            </label>
+
+            <!-- Option 4: Private 1-on-1 -->
+            <label class="program-card relative flex items-start gap-3.5 p-4 rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition-all duration-200 select-none">
+              <input type="radio" name="programChoice" value="private" class="sr-only" onchange="handleProgramChange(this)" />
+              <div class="radio-dot w-5 h-5 rounded-full border-2 border-[#17325D] bg-transparent flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-2 h-2 rounded-full bg-transparent"></div>
+              </div>
+              <div>
+                <span class="block text-sm font-headline font-bold text-white uppercase">Private 1-on-1 Lesson</span>
+                <span class="block text-xs text-[#CBD5E1] font-body mt-0.5">Hourly behind-the-wheel coaching</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="flex justify-end pt-2">
+            <button type="button" onclick="goToStep(2)" class="w-full sm:w-auto bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-wider py-4 px-8 rounded-xl border border-[#38BDF8]/40 transition duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+              <span>Next: Your Contact</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             STEP 2: CONTACT DETAILS (ONLY 2 QUICK FIELDS)
+        ========================================================== -->
+        <div id="formStep2" class="hidden transition-all duration-300">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-headline font-black text-xl sm:text-2xl text-white uppercase tracking-tight">
+              2. Who Should Butch Contact?
+            </h3>
+            <span class="text-[11px] font-bold text-[#22C55E] uppercase tracking-wider bg-[#22C55E]/10 border border-[#22C55E]/30 px-2.5 py-1 rounded">
+              Zero Spam
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body mb-6">
+            We only call to confirm your scheduled slot. No marketing calls.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div>
+              <label for="fbName" class="block text-xs font-headline font-bold uppercase tracking-wider text-[#CBD5E1] mb-2">
+                Student or Parent Full Name <span class="text-[#F87171] font-bold">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="fbName" 
+                placeholder="e.g. Liam Smith" 
+                class="w-full bg-[#061421] border border-[#17325D] focus:border-[#38BDF8] focus:bg-[#081F36] text-white text-sm px-4 py-3.5 rounded-xl focus:outline-none transition placeholder:text-[#94A3B8]"
+              />
+              <p id="nameError" class="hidden text-xs text-[#F87171] font-medium mt-1.5 font-body">Please enter your full name to proceed.</p>
+            </div>
+
+            <div>
+              <label for="fbPhone" class="block text-xs font-headline font-bold uppercase tracking-wider text-[#CBD5E1] mb-2">
+                Phone Number <span class="text-[#F87171] font-bold">*</span>
+              </label>
+              <input 
+                type="tel" 
+                id="fbPhone" 
+                placeholder="(907) 868-3151" 
+                class="w-full bg-[#061421] border border-[#17325D] focus:border-[#38BDF8] focus:bg-[#081F36] text-white text-sm px-4 py-3.5 rounded-xl focus:outline-none transition placeholder:text-[#94A3B8]"
+              />
+              <p id="phoneError" class="hidden text-xs text-[#F87171] font-medium mt-1.5 font-body">Please enter a valid phone number for confirmation.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-4 pt-2">
+            <button type="button" onclick="goToStep(1)" class="text-xs font-headline font-bold uppercase tracking-wider text-[#CBD5E1] hover:text-white py-3 px-4 transition flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+              <span>Back</span>
+            </button>
+
+            <button type="button" onclick="validateStep2AndProceed()" class="bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-wider py-4 px-8 rounded-xl border border-[#38BDF8]/40 transition duration-200 flex items-center gap-2 cursor-pointer shadow-lg">
+              <span>Next: Pick Timing</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             STEP 3: PREFERRED TIMING & INSTANT LOCK
+        ========================================================== -->
+        <div id="formStep3" class="hidden transition-all duration-300">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-headline font-black text-xl sm:text-2xl text-white uppercase tracking-tight">
+              3. When Would You Like To Start?
+            </h3>
+            <span class="text-[11px] font-bold text-[#22C55E] uppercase tracking-wider bg-[#22C55E]/10 border border-[#22C55E]/30 px-2.5 py-1 rounded">
+              Zero Deposit
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#CBD5E1] font-body mb-6">
+            Choose your timing preference. No payment required until you speak with Butch.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <label class="timing-card relative p-4 text-center rounded-xl bg-[#081F36] border-2 border-[#38BDF8] hover:border-[#38BDF8] cursor-pointer transition select-none">
+              <input type="radio" name="timingChoice" value="This Week (Urgent)" class="sr-only" checked onchange="handleTimingChange(this)" />
+              <span class="block text-sm font-headline font-bold text-white uppercase">⚡ This Week</span>
+              <span class="block text-[11px] text-[#38BDF8] mt-1 font-body">Fastest slot</span>
+            </label>
+
+            <label class="timing-card relative p-4 text-center rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition select-none">
+              <input type="radio" name="timingChoice" value="Next Week" class="sr-only" onchange="handleTimingChange(this)" />
+              <span class="block text-sm font-headline font-bold text-white uppercase">📅 Next Week</span>
+              <span class="block text-[11px] text-[#CBD5E1] mt-1 font-body">Standard slot</span>
+            </label>
+
+            <label class="timing-card relative p-4 text-center rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition select-none">
+              <input type="radio" name="timingChoice" value="Weekend Only" class="sr-only" onchange="handleTimingChange(this)" />
+              <span class="block text-sm font-headline font-bold text-white uppercase">🕒 Weekend</span>
+              <span class="block text-[11px] text-[#CBD5E1] mt-1 font-body">Saturday slot</span>
+            </label>
+
+            <label class="timing-card relative p-4 text-center rounded-xl bg-[#061421] border-2 border-[#17325D] hover:border-[#38BDF8]/60 cursor-pointer transition select-none">
+              <input type="radio" name="timingChoice" value="Flexible" class="sr-only" onchange="handleTimingChange(this)" />
+              <span class="block text-sm font-headline font-bold text-white uppercase">💬 Any Time</span>
+              <span class="block text-[11px] text-[#CBD5E1] mt-1 font-body">Flexible hours</span>
+            </label>
+          </div>
+
+          <!-- Hidden storage for selected program for compatibility -->
+          <input type="hidden" id="fbProgram" value="dmv-test" />
+
+          <div class="flex items-center justify-between gap-4 pt-2">
+            <button type="button" onclick="goToStep(2)" class="text-xs font-headline font-bold uppercase tracking-wider text-[#CBD5E1] hover:text-white py-3 px-4 transition flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+              <span>Back</span>
+            </button>
+
+            <button type="button" onclick="submitMultiStepBooking()" class="bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-black text-xs sm:text-sm uppercase tracking-wider py-4 px-8 rounded-xl border border-[#38BDF8]/40 transition duration-200 flex items-center gap-2 cursor-pointer shadow-xl">
+              <span>CONFIRM PRIORITY BOOKING</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </button>
+          </div>
+
+          <p class="text-[11px] text-[#CBD5E1] text-center mt-6 font-body flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-[#22C55E]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 1a9 9 0 100 18 9 9 0 000-18zm3.707 7.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Zero deposit required to reserve. Pay only after scheduling directly with Butch.
+          </p>
+        </div>
+
+        <!-- =========================================================
+             SUCCESS CONFIRMATION STATE (SHOWN AFTER STEP 3 SUBMISSION)
+        ========================================================== -->
+        <div id="fastBookSuccess" class="hidden text-center py-6 sm:py-8">
+          <div class="w-16 h-16 rounded-full bg-[#22C55E]/15 border-2 border-[#22C55E] text-[#22C55E] flex items-center justify-center mx-auto mb-4 shadow-[0_0_25px_rgba(34,197,94,0.3)]">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          
+          <h3 class="font-headline font-black text-2xl sm:text-3xl text-white uppercase tracking-tight mb-2">
+            Booking Request Received!
+          </h3>
+          <p class="text-sm text-[#CBD5E1] font-body max-w-md mx-auto leading-relaxed mb-6">
+            Thank you! Butch Evans will personally call you at <strong id="confirmedPhone" class="text-[#38BDF8]">your phone number</strong> within 15 minutes during business hours to lock in your date.
+          </p>
+          
+          <div class="inline-flex items-center gap-2 bg-[#061421] border border-[#17325D] px-4 py-2.5 rounded-xl text-xs text-[#CBD5E1] font-body">
+            <span>Need an immediate answer? Call</span>
+            <a href="tel:9078683151" class="text-[#38BDF8] font-bold hover:underline">(907) 868-3151</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2. "— OR —" Divider between Form and Direct Call Strip (All Screens) -->
+      <div class="flex items-center justify-center gap-3 my-6 sm:my-8">
+        <div class="h-px flex-1 max-w-[80px] sm:max-w-[140px] bg-[#17325D]"></div>
+        <span class="text-xs sm:text-sm font-headline font-bold text-[#38BDF8] uppercase tracking-widest px-2">— OR —</span>
+        <div class="h-px flex-1 max-w-[80px] sm:max-w-[140px] bg-[#17325D]"></div>
+      </div>
+
+      <!-- 3. Clean Minimal Direct Call Strip (Below Form on All Screens) -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#0B2544] border border-[#17325D] hover:border-[#38BDF8]/50 transition duration-300 p-4 sm:p-5 rounded-2xl shadow-xl">
+        <div class="flex items-center gap-3.5 text-center sm:text-left">
+          <div class="w-10 h-10 rounded-xl bg-[#061421] border border-[#0E5A8A] flex items-center justify-center text-[#38BDF8] shrink-0">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-headline font-bold text-white block uppercase tracking-wide">Prefer to call directly?</span>
+            <span class="text-[11px] sm:text-xs text-[#CBD5E1] font-body">Direct line to Butch Evans &bull; Mon–Sat 10:30 AM – 3:00 PM</span>
+          </div>
+        </div>
+
+        <a href="tel:9078683151" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#0E5A8A] hover:bg-[#38BDF8] hover:text-[#0A1422] text-white font-headline font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl border border-[#38BDF8]/40 transition duration-200 shrink-0 shadow-md">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+          <span>Call (907) 868-3151</span>
+        </a>
+      </div>
+
+      <!-- 4. Minimal 3-Item Assurance Strip -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+        <div class="bg-[#0B2544]/60 border border-[#17325D] rounded-xl p-3 flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 text-[#38BDF8]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-xs font-headline font-bold text-white uppercase tracking-wider">0-Day DMV Wait Bypassed</span>
+        </div>
+        <div class="bg-[#0B2544]/60 border border-[#17325D] rounded-xl p-3 flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 text-[#38BDF8]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-xs font-headline font-bold text-white uppercase tracking-wider">Dual-Control Fleet</span>
+        </div>
+        <div class="bg-[#0B2544]/60 border border-[#17325D] rounded-xl p-3 flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 text-[#22C55E]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-xs font-headline font-bold text-white uppercase tracking-wider">$0 Upfront Deposit</span>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <!-- Self-Contained Progressive Multi-Step Controller -->
+    <script>
+      function goToStep(step) {
+        document.getElementById('formStep1').classList.add('hidden');
+        document.getElementById('formStep2').classList.add('hidden');
+        document.getElementById('formStep3').classList.add('hidden');
+        document.getElementById('formStep' + step).classList.remove('hidden');
+
+        const progress = document.getElementById('stepProgress');
+        const l1 = document.getElementById('stepLabel1');
+        const l2 = document.getElementById('stepLabel2');
+        const l3 = document.getElementById('stepLabel3');
+        const b2 = document.getElementById('stepBadge2');
+        const b3 = document.getElementById('stepBadge3');
+
+        if (step === 1) {
+          progress.style.width = '33.33%';
+          l1.className = 'text-[#38BDF8] flex items-center gap-1.5 transition-colors';
+          l2.className = 'text-[#94A3B8] flex items-center gap-1.5 transition-colors';
+          l3.className = 'text-[#94A3B8] flex items-center gap-1.5 transition-colors';
+          b2.className = 'w-5 h-5 rounded-full bg-[#061421] border border-[#38BDF8]/40 text-white text-[10px] font-black flex items-center justify-center';
+          b3.className = 'w-5 h-5 rounded-full bg-[#061421] border border-[#38BDF8]/40 text-white text-[10px] font-black flex items-center justify-center';
+        } else if (step === 2) {
+          progress.style.width = '66.66%';
+          l1.className = 'text-white flex items-center gap-1.5 transition-colors';
+          l2.className = 'text-[#38BDF8] flex items-center gap-1.5 transition-colors';
+          l3.className = 'text-[#94A3B8] flex items-center gap-1.5 transition-colors';
+          b2.className = 'w-5 h-5 rounded-full bg-[#38BDF8] text-[#0A1422] text-[10px] font-black flex items-center justify-center';
+          b3.className = 'w-5 h-5 rounded-full bg-[#061421] border border-[#38BDF8]/40 text-white text-[10px] font-black flex items-center justify-center';
+        } else if (step === 3) {
+          progress.style.width = '100%';
+          l1.className = 'text-white flex items-center gap-1.5 transition-colors';
+          l2.className = 'text-white flex items-center gap-1.5 transition-colors';
+          l3.className = 'text-[#38BDF8] flex items-center gap-1.5 transition-colors';
+          b2.className = 'w-5 h-5 rounded-full bg-white text-[#0A1422] text-[10px] font-black flex items-center justify-center';
+          b3.className = 'w-5 h-5 rounded-full bg-[#38BDF8] text-[#0A1422] text-[10px] font-black flex items-center justify-center';
+        }
+      }
+
+      function handleProgramChange(input) {
+        document.querySelectorAll('.program-card').forEach(el => {
+          el.classList.remove('border-[#38BDF8]', 'bg-[#081F36]');
+          el.classList.add('border-[#17325D]', 'bg-[#061421]');
+          const dot = el.querySelector('.radio-dot');
+          if (dot) {
+            dot.className = 'radio-dot w-5 h-5 rounded-full border-2 border-[#17325D] bg-transparent flex items-center justify-center shrink-0 mt-0.5';
+            dot.innerHTML = '<div class="w-2 h-2 rounded-full bg-transparent"></div>';
+          }
+        });
+
+        const activeCard = input.closest('.program-card');
+        activeCard.classList.remove('border-[#17325D]', 'bg-[#061421]');
+        activeCard.classList.add('border-[#38BDF8]', 'bg-[#081F36]');
+        const activeDot = activeCard.querySelector('.radio-dot');
+        if (activeDot) {
+          activeDot.className = 'radio-dot w-5 h-5 rounded-full border-2 border-[#38BDF8] bg-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5';
+          activeDot.innerHTML = '<div class="w-2 h-2 rounded-full bg-[#0A1422]"></div>';
+        }
+
+        const hiddenInput = document.getElementById('fbProgram');
+        if (hiddenInput) hiddenInput.value = input.value;
+      }
+
+      function validateStep2AndProceed() {
+        const nameVal = document.getElementById('fbName').value.trim();
+        const phoneVal = document.getElementById('fbPhone').value.trim();
+        let valid = true;
+
+        if (!nameVal) {
+          document.getElementById('nameError').classList.remove('hidden');
+          valid = false;
+        } else {
+          document.getElementById('nameError').classList.add('hidden');
+        }
+
+        if (!phoneVal) {
+          document.getElementById('phoneError').classList.remove('hidden');
+          valid = false;
+        } else {
+          document.getElementById('phoneError').classList.add('hidden');
+        }
+
+        if (valid) {
+          goToStep(3);
+        }
+      }
+
+      function handleTimingChange(input) {
+        document.querySelectorAll('.timing-card').forEach(el => {
+          el.classList.remove('border-[#38BDF8]', 'bg-[#081F36]');
+          el.classList.add('border-[#17325D]', 'bg-[#061421]');
+        });
+        const activeTiming = input.closest('.timing-card');
+        activeTiming.classList.remove('border-[#17325D]', 'bg-[#061421]');
+        activeTiming.classList.add('border-[#38BDF8]', 'bg-[#081F36]');
+      }
+
+      function submitMultiStepBooking() {
+        const phoneVal = document.getElementById('fbPhone').value.trim();
+        document.getElementById('confirmedPhone').textContent = phoneVal || 'your phone';
+        document.getElementById('formStep3').classList.add('hidden');
+        document.getElementById('stepProgressContainer').classList.add('hidden');
+        document.getElementById('fastBookSuccess').classList.remove('hidden');
+      }
+    </script>
+  </section>
+
+  <!-- =========================================================
+       SECTION 6: STUDENT AND PARENT REVIEWS (2-LAYER INFINITE MARQUEE)
+       Strict Color Mandate: Solid Deep Navy #0A1422, Cards #0B2544, Accents #38BDF8, Stars #F59E0B
+  ========================================================== -->
+  <section id="reviews" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+    
+    <!-- Section Header (Title with Blue Background on 'Reviews') -->
+    <div class="text-center w-full max-w-4xl mx-auto mb-10 sm:mb-14 px-4">
+      <h2 class="font-headline font-black text-3xl sm:text-5xl md:text-6xl text-white tracking-tight uppercase leading-[1.15]">
+        Student and Parent <br class="hidden sm:inline" />
+        <span class="inline-block bg-[#0E5A8A] text-white px-4 sm:px-6 py-1 rounded-xl sm:rounded-2xl border border-[#38BDF8]/30 mt-2">Reviews</span>
+      </h2>
+      <p class="font-body text-[#CBD5E1] text-sm sm:text-base md:text-lg mt-3 sm:mt-4 max-w-2xl mx-auto">
+        Verified stories from drivers across Anchorage.
+      </p>
+    </div>
+
+    <!-- 2-Layer Review Showcase (Continuous Autoplay Marquee, Pause on Hover) -->
+    <div class="w-full overflow-hidden marquee-pause space-y-4 sm:space-y-6">
+
+      <!-- LAYER 1: Right to Left Autoplay Slide -->
+      <div class="w-full overflow-hidden flex">
+        <div class="marquee-track-left flex gap-4 sm:gap-6">
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Leann Jack</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Generational Student</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Butch taught me 20 years ago and my daughter 4 years ago how to drive defensively. There is no one better in Anchorage."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Alumni Parent</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Marcus Vance</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Teen Road Test Passer</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Passed my Alaska DMV road test on the very first try. Butch kept me calm and explained every maneuver clearly before the examiner got in."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">1st Try Pass</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">David Rostova</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Anchorage Parent</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Our son was terrified of winter driving on the Glenn Highway. After 4 sessions with Butch, he drives with total confidence on ice and slush."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Winter Safety</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Karen Lindstrom</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Parent of High Schooler</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "The state DMV backlog was six weeks out. Butch got our daughter scheduled, trained, and tested in under four days. Absolute lifesaver."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">DMV Bypassed</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Tyler Brooks</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">First-Time Adult Driver</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Started driving at age 24 with major anxiety. Butch was remarkably patient, respectful, and never once made me feel rushed."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Adult Novice</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Leann Jack</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Generational Student</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Butch taught me 20 years ago and my daughter 4 years ago how to drive defensively. There is no one better in Anchorage."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Alumni Parent</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Marcus Vance</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Teen Road Test Passer</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Passed my Alaska DMV road test on the very first try. Butch kept me calm and explained every maneuver clearly before the examiner got in."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">1st Try Pass</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">David Rostova</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Anchorage Parent</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Our son was terrified of winter driving on the Glenn Highway. After 4 sessions with Butch, he drives with total confidence on ice and slush."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Winter Safety</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Karen Lindstrom</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Parent of High Schooler</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "The state DMV backlog was six weeks out. Butch got our daughter scheduled, trained, and tested in under four days. Absolute lifesaver."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">DMV Bypassed</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Tyler Brooks</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">First-Time Adult Driver</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Started driving at age 24 with major anxiety. Butch was remarkably patient, respectful, and never once made me feel rushed."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Adult Novice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAYER 2: Left to Right Autoplay Slide -->
+      <div class="w-full overflow-hidden flex">
+        <div class="marquee-track-right flex gap-4 sm:gap-6">
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Megan O'Connor</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Teen Driver Graduate</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Parallel parking used to scare me to death. Butch gave me three simple reference points and I nailed it on my test with zero deductions."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Zero Errors</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Robert Chen</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Parent of Two Students</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Dual-control car gave us complete peace of mind. Both of our teenagers passed on their first attempt with Be Smart Driving Academy."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Dual-Control</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Sarah Miller</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Winter Driving Student</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Learned how to brake safely on black ice and steer out of a skid. Every high school student in Anchorage needs this winter training."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Ice Driving</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Jason Albright</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">High School Senior</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Passed my test yesterday on the first try. Butch knows every single turn and maneuver on the Anchorage DMV test route."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Road Test Pass</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Christine Howard</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Anchorage Parent</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Sent both of my twins through the sixteen hour program. Professional, on time, and worth every dollar for their safety on Alaska roads."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Twin Drivers</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Megan O'Connor</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Teen Driver Graduate</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Parallel parking used to scare me to death. Butch gave me three simple reference points and I nailed it on my test with zero deductions."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Zero Errors</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Robert Chen</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Parent of Two Students</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Dual-control car gave us complete peace of mind. Both of our teenagers passed on their first attempt with Be Smart Driving Academy."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Dual-Control</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Sarah Miller</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Winter Driving Student</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Learned how to brake safely on black ice and steer out of a skid. Every high school student in Anchorage needs this winter training."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Ice Driving</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Jason Albright</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">High School Senior</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Passed my test yesterday on the first try. Butch knows every single turn and maneuver on the Anchorage DMV test route."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Road Test Pass</span>
+            </div>
+          </div>
+
+          <div class="w-[84vw] sm:w-[350px] md:w-[370px] min-h-[260px] sm:min-h-[280px] shrink-0 bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/60 rounded-2xl p-5 sm:p-5 flex flex-col justify-between transition-colors" aria-hidden="true">
+            <!-- Top: Name and Subtitle -->
+            <div>
+              <h3 class="font-headline font-bold text-base sm:text-lg text-[#38BDF8] leading-snug">Christine Howard</h3>
+              <p class="font-body text-xs text-white font-medium mt-0.5">Anchorage Parent</p>
+            </div>
+            
+            <!-- Middle: Review Message with Clear Top and Bottom Divider Lines -->
+            <div class="border-y border-[#1E3A63] py-3.5 my-3">
+              <p class="font-body text-sm sm:text-base text-[#CBD5E1] leading-relaxed italic">
+                "Sent both of my twins through the sixteen hour program. Professional, on time, and worth every dollar for their safety on Alaska roads."
+              </p>
+            </div>
+            
+            <!-- Bottom: 5 Stars on Left and Badge on Right -->
+            <div class="flex items-center justify-between pt-0.5">
+              <div class="flex items-center gap-1 text-[#F59E0B] text-sm sm:text-base">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">Twin Drivers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       SECTION 7: FREQUENTLY ASKED QUESTIONS (1-COLUMN DIRECT Q&A)
+  ========================================================== -->
+  <section id="faq" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+    <!-- Ambient Background Accents -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-25">
+      <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#0E5A8A]/15 blur-3xl"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#082F49]/25 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header (Zero Eyebrows) -->
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="font-headline font-black text-3xl sm:text-4xl md:text-5xl text-white tracking-tight uppercase leading-tight">
+          FREQUENTLY ASKED <span class="text-[#38BDF8]">QUESTIONS</span>
+        </h2>
+        <p class="font-body text-[#CBD5E1] text-base sm:text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+          Straight answers from Head Instructor Butch Evans about class registration, road tests, vehicle dual controls, and teen requirements.
+        </p>
+      </div>
+
+      <!-- Single-Column Direct Q&A (Only Question and Answer, Increased Text Size, Zero Eyebrows) -->
+      <div class="space-y-5 sm:space-y-6">
+        
+        <!-- FAQ Item 1 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            How do I register for a class or road test?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            Fill out the fast callback form on this page or call Butch directly at <a href="tel:9078683151" class="text-[#38BDF8] font-bold hover:underline">(907) 868-3151</a>. Butch personally contacts you within 15–30 minutes during business hours to confirm availability and lock in your schedule.
+          </p>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            Does submitting the form require immediate payment?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            <strong class="text-white font-semibold">No deposit required.</strong> Submitting the form reserves your preferred date and program with zero upfront charge. You pay only after we confirm availability and lock in your exact calendar schedule with you directly.
+          </p>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            What if the student is under 18 years old?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            Students under 18 require parental or legal guardian consent. Please provide parent contact details when requesting your slot. A parent or guardian signs the enrollment agreement prior to behind-the-wheel driving lessons.
+          </p>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            What should students bring to their first lesson?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            Please bring a valid Alaska learner's permit or government photo ID, weather-appropriate clothing for Alaska conditions, and comfortable closed-toe driving shoes (avoid heavy winter boots or loose flip-flops while operating vehicle pedals).
+          </p>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            How does the Third-Party DMV Road Test work?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            As a State-Certified third-party tester, we administer the official State of Alaska road test on our schedule so you don't have to wait 4 to 6 weeks at the state DMV. Once you pass, your results are immediately certified to collect your permanent Alaska driver's license.
+          </p>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="bg-[#0B2544] border border-[#0B2A4A] hover:border-[#38BDF8]/50 rounded-2xl p-6 sm:p-8 transition-colors">
+          <h3 class="font-headline font-bold text-xl sm:text-2xl text-white leading-snug">
+            How does the up to 40% insurance discount work?
+          </h3>
+          <p class="font-body text-base sm:text-lg text-[#CBD5E1] leading-relaxed mt-4 pt-4 border-t border-[#1E3A63]">
+            Graduating from our State of Alaska Approved 16-Hour Novice Course or Defensive Driving Program awards an official certificate that major insurers (State Farm, GEICO, Progressive, USAA, Allstate) accept for premium discounts of up to 40% for up to 3 years.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Quick Direct Help Banner (Zero Eyebrows) -->
+      <div class="mt-10 sm:mt-12 bg-[#0B2544] border-2 border-[#0B2A4A] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="font-headline font-bold text-lg sm:text-xl text-white">Have a specific question not covered here?</h3>
+          <p class="font-body text-sm sm:text-base text-[#CBD5E1] mt-1">Talk directly with Head Instructor Butch Evans &bull; Mon–Sat 10:30 AM – 3:00 PM</p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0 w-full sm:w-auto">
+          <a href="tel:9078683151" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#0E5A8A] hover:bg-[#082F49] border border-[#38BDF8]/40 text-white font-ui font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-xl transition shadow-md">
+            <svg class="w-4 h-4 text-[#38BDF8]" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+            <span>Call (907) 868-3151</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 8: OFFICIAL FOOTER (EXACT REFERENCE)
+  ========================================================== -->
+  <footer class="relative w-full bg-[#061421] text-white border-t border-[#0B2A4A] py-6 sm:py-8 md:pt-16 md:pb-12">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
+      
+      <!-- Top Grid: 4 Columns (Desktop & Tablet only - Hidden on Mobile) -->
+      <div class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-10 sm:pb-12 border-b border-[#0B2A4A]/80">
+        
+        <!-- Col 1: Brand & Facebook (5 Cols) -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-11 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+            <div>
+              <span class="block font-headline font-bold text-lg tracking-tight uppercase text-white leading-none">BE SMART</span>
+              <span class="block text-[11px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
+            </div>
+          </div>
+
+          <!-- Vector Facebook SVG -->
+          <div class="pt-1">
+            <a href="https://www.facebook.com/besmartdrivingacademyllc" target="_blank" rel="noopener noreferrer" class="inline-block hover:opacity-90 hover:scale-105 transition-all duration-200" title="Visit Be Smart Driving Academy on Facebook" aria-label="Facebook Page">
+              <svg class="w-10 h-10 sm:w-11 sm:h-11 rounded-full shadow-md" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="24" fill="#1877F2"/>
+                <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M33.2 26.8l.9-6H28.3v-3.9c0-1.7.8-3.3 3.5-3.3h2.7v-5.1s-2.5-.4-4.8-.4c-4.9 0-8.1 3-8.1 8.4v4.3h-5.3v6h5.3v14.4c1.1.2 2.2.3 3.3.3s2.2-.1 3.3-.3V26.8h5.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (2 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-headline font-bold text-xs sm:text-sm uppercase tracking-wider text-white">
+            QUICK LINKS
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm font-body text-[#CBD5E1]">
+            <li><a href="#courses" class="hover:text-[#38BDF8] transition">Courses & Pricing</a></li>
+            <li><a href="#about" class="hover:text-[#38BDF8] transition">About Butch Evans</a></li>
+            <li><a href="#why-choose" class="hover:text-[#38BDF8] transition">Why Choose Us</a></li>
+            <li><a href="#fast-book" class="hover:text-[#38BDF8] transition">Fast-Track Booking</a></li>
+            <li><a href="#reviews" class="hover:text-[#38BDF8] transition">Parent Reviews</a></li>
+            <li><a href="#faq" class="hover:text-[#38BDF8] transition">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Anchorage Office (2 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-headline font-bold text-xs sm:text-sm uppercase tracking-wider text-white">
+            ANCHORAGE OFFICE
+          </h4>
+          <div class="space-y-3 text-xs sm:text-sm text-[#CBD5E1] font-body leading-relaxed">
+            <p>
+              <strong class="text-white block font-semibold">Address:</strong>
+              <a href="https://maps.google.com/?q=1921+W+Dimond+Blvd+suite+%23105+A-3,+Anchorage,+AK+99515" target="_blank" rel="noopener noreferrer" class="hover:text-[#38BDF8] transition">
+                1921 W Dimond Blvd<br />
+                Suite #105 A-3<br />
+                Anchorage, AK 99515
+              </a>
+            </p>
+            <p>
+              <strong class="text-white block font-semibold">Hours:</strong>
+              Mon – Sat: 10:30 AM – 3:00 PM<br />
+              <span class="text-[#38BDF8] font-medium">By Appointment</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 4: Direct Contact (3 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-headline font-bold text-xs sm:text-sm uppercase tracking-wider text-white">
+            DIRECT CONTACT
+          </h4>
+          <p class="text-xs text-[#CBD5E1] font-body">
+            Speak directly with owner and head instructor Butch Evans:
+          </p>
+          
+          <div class="space-y-2 pt-1">
+            <a href="tel:9078683151" class="flex items-center justify-center gap-2 bg-[#0E5A8A] hover:bg-[#082F49] text-white px-4 py-2.5 rounded-xl font-headline font-bold text-xs uppercase tracking-wider transition shadow-md border border-[#38BDF8]/30">
+              <svg class="w-4 h-4 shrink-0 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+              <span>CALL (907) 868-3151</span>
+            </a>
+
+            <button onclick="openCallbackModal()" class="w-full bg-[#082F49]/40 hover:bg-[#082F49] border border-[#0E5A8A] text-[#38BDF8] hover:text-white px-4 py-2.5 rounded-xl font-headline font-bold text-xs uppercase tracking-wider transition text-center">
+              REQUEST CALLBACK
+            </button>
+          </div>
+
+          <p class="text-[11px] text-[#CBD5E1] font-mono pt-1">
+            Email: <a href="mailto:BeSmartda@gmail.com" class="hover:text-[#38BDF8] transition">BeSmartda@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Desktop & Tablet Bottom Bar (Hidden on Mobile) -->
+      <div class="hidden md:flex pt-6 sm:pt-8 flex-col sm:flex-row items-center justify-between gap-3 text-[11px] sm:text-xs text-[#CBD5E1] font-body text-center sm:text-left">
+        <p>
+          &copy; 2026 Be Smart Driving Academy LLC. All rights reserved. Anchorage, Alaska.
+        </p>
+        <p class="text-[10px] sm:text-[11px] text-[#94A3B8]">
+          State of Alaska Approved Driver Education & Certified Third-Party Testing Center.
+        </p>
+      </div>
+
+      <!-- Mobile Only: Logo, Business Name, Facebook Icon + 2-Line Footer -->
+      <div class="block md:hidden text-center space-y-4 font-body pt-2">
+        
+        <!-- Logo & Business Name Centered -->
+        <div class="flex items-center justify-center gap-3">
+          <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-10 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+          <div class="text-left">
+            <span class="block font-headline font-bold text-base tracking-tight uppercase text-white leading-none">BE SMART</span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
+          </div>
+        </div>
+
+        <!-- Row: Facebook Icon on Left & 3 Links on Right -->
+        <div class="flex items-center justify-between px-2 pt-1 pb-1">
+          <!-- Left: Facebook Icon -->
+          <a href="https://www.facebook.com/besmartdrivingacademyllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center hover:opacity-90 hover:scale-105 transition-all duration-200" title="Visit Be Smart Driving Academy on Facebook" aria-label="Facebook Page">
+            <svg class="w-9 h-9 rounded-full shadow-md" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="24" fill="#1877F2"/>
+              <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M33.2 26.8l.9-6H28.3v-3.9c0-1.7.8-3.3 3.5-3.3h2.7v-5.1s-2.5-.4-4.8-.4c-4.9 0-8.1 3-8.1 8.4v4.3h-5.3v6h5.3v14.4c1.1.2 2.2.3 3.3.3s2.2-.1 3.3-.3V26.8h5.2z"/>
+            </svg>
+          </a>
+
+          <!-- Right: 3 Quick Links -->
+          <div class="flex items-center gap-3 text-xs font-bold font-ui text-[#CBD5E1]">
+            <a href="#courses" class="hover:text-[#38BDF8] transition py-1">Courses</a>
+            <span class="text-[#38BDF8] font-black">&bull;</span>
+            <a href="#fast-book" class="hover:text-[#38BDF8] transition py-1">Reserve</a>
+            <span class="text-[#38BDF8] font-black">&bull;</span>
+            <a href="#faq" class="hover:text-[#38BDF8] transition py-1">FAQ</a>
+          </div>
+        </div>
+
+        <!-- 2-Line Legal & Copyright Text Below -->
+        <div class="pt-3 border-t border-[#0B2A4A] text-center space-y-1">
+          <p class="text-xs text-[#CBD5E1] font-semibold leading-relaxed">
+            &copy; 2026 Be Smart Driving Academy LLC &bull; Anchorage, Alaska
+          </p>
+          <p class="text-[11px] text-[#94A3B8] leading-relaxed">
+            State of Alaska Approved Driver Education &amp; Certified Third-Party Testing Center
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Callback Modal -->
+  <div id="callbackModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85">
+    <div class="bg-[#0A1422] border-2 border-[#0B2A4A] rounded-2xl max-w-sm w-full p-6 relative">
+      <button onclick="closeCallbackModal()" class="absolute top-3 right-3 text-[#CBD5E1] hover:text-white text-xl font-bold">&times;</button>
+      <h3 class="font-headline font-bold text-lg text-white mb-1">Request A Call</h3>
+      <p class="text-xs text-[#CBD5E1] mb-4">Leave your phone number and we will call you back today.</p>
+      <form onsubmit="handleCallback(event)" class="space-y-3">
+        <input type="text" required placeholder="Your Name" class="w-full bg-[#0B2A4A] border border-[#082F49] text-white text-xs px-3.5 py-2.5 rounded-lg focus:outline-none focus:border-[#38BDF8] placeholder-[#94A3B8]" />
+        <input type="tel" required placeholder="Phone Number" class="w-full bg-[#0B2A4A] border border-[#082F49] text-white text-xs px-3.5 py-2.5 rounded-lg focus:outline-none focus:border-[#38BDF8] placeholder-[#94A3B8]" />
+        <button type="submit" class="w-full bg-[#0E5A8A] hover:bg-[#082F49] text-white font-bold text-xs py-3 rounded-lg transition uppercase tracking-wider border border-[#38BDF8]/40">Submit Request</button>
+        <p id="cbSuccess" class="hidden text-xs text-[#38BDF8] font-bold text-center mt-2">✓ Request submitted!</p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+    function openCallbackModal() {
+      document.getElementById('callbackModal').classList.remove('hidden');
+    }
+    function closeCallbackModal() {
+      document.getElementById('callbackModal').classList.add('hidden');
+    }
+    function handleCallback(e) {
+      e.preventDefault();
+      document.getElementById('cbSuccess').classList.remove('hidden');
+      setTimeout(closeCallbackModal, 1500);
+    }
+    function handleFastBook(e) {
+      e.preventDefault();
+      const successEl = document.getElementById('fastBookSuccess');
+      if (successEl) {
+        successEl.classList.remove('hidden');
+      }
+      e.target.reset();
+    }
+
+    // =========================================================
+    // MOBILE COURSE SLIDER (MANUAL SWIPE/CLICK + AUTO-SLIDE)
+    // =========================================================
+    let courseCurrentIndex = 0;
+    const courseTotalSlides = 5;
+    let courseAutoSlideTimer = null;
+
+    function updateCourseDots(idx) {
+      const dotsContainer = document.getElementById('courseSliderDots');
+      if (!dotsContainer) return;
+      const dots = dotsContainer.querySelectorAll('button');
+      dots.forEach((dot, i) => {
+        if (i === idx) {
+          dot.className = 'w-7 h-2 rounded-full bg-[#38BDF8] transition-all duration-300';
+        } else {
+          dot.className = 'w-2 h-2 rounded-full bg-[#17325D] transition-all duration-300';
+        }
+      });
+    }
+
+    function goToCourseSlide(idx) {
+      const slider = document.getElementById('courseMobileSlider');
+      if (!slider) return;
+      courseCurrentIndex = (idx + courseTotalSlides) % courseTotalSlides;
+      const slideWidth = slider.clientWidth;
+      slider.scrollTo({
+        left: courseCurrentIndex * slideWidth,
+        behavior: 'smooth'
+      });
+      updateCourseDots(courseCurrentIndex);
+    }
+
+    function slideCoursePrev() {
+      goToCourseSlide(courseCurrentIndex - 1);
+      resetCourseAutoSlide();
+    }
+
+    function slideCourseNext() {
+      goToCourseSlide(courseCurrentIndex + 1);
+      resetCourseAutoSlide();
+    }
+
+    function startCourseAutoSlide() {
+      if (courseAutoSlideTimer) clearInterval(courseAutoSlideTimer);
+      courseAutoSlideTimer = setInterval(() => {
+        if (window.innerWidth < 768) {
+          goToCourseSlide(courseCurrentIndex + 1);
+        }
+      }, 4000);
+    }
+
+    function resetCourseAutoSlide() {
+      clearInterval(courseAutoSlideTimer);
+      startCourseAutoSlide();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('courseMobileSlider');
+      if (slider) {
+        let isScrolling;
+        slider.addEventListener('scroll', () => {
+          window.clearTimeout(isScrolling);
+          isScrolling = setTimeout(() => {
+            const slideWidth = slider.clientWidth;
+            if (slideWidth > 0) {
+              const newIdx = Math.round(slider.scrollLeft / slideWidth);
+              if (newIdx !== courseCurrentIndex && newIdx >= 0 && newIdx < courseTotalSlides) {
+                courseCurrentIndex = newIdx;
+                updateCourseDots(courseCurrentIndex);
+              }
+            }
+          }, 60);
+        }, { passive: true });
+
+        slider.addEventListener('touchstart', () => clearInterval(courseAutoSlideTimer), { passive: true });
+        slider.addEventListener('touchend', () => resetCourseAutoSlide(), { passive: true });
+
+        startCourseAutoSlide();
+      }
+    });
+  </script>
+
+</body>
+</html>
