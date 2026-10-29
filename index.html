@@ -100,27 +100,29 @@
        DYNAMIC AUTO-FIT SCALE ENGINE (ALL LAPTOPS, MACBOOKS & DESKTOPS)
        Automatically fits the 1080p desktop composition proportionally
        across ANY laptop or MacBook screen (13", 14", 15", 16", etc.)
-       while leaving mobile devices (<1024px) completely native.
+       in a balanced MEDIUM scale, while leaving mobile devices (<1024px)
+       completely native.
   ============================================================ -->
   <script>
     (function() {
       function applyDynamicViewportScale() {
         if (window.innerWidth >= 1024) {
-          // Compare against standard 1080p desktop baseline (1920w x 960h safe area)
-          var scaleW = window.innerWidth / 1920;
-          var scaleH = window.innerHeight / 960;
-          var scale = Math.min(scaleW, scaleH);
-          // Clamp between 0.62 and 1.0 so desktop stays 100% and laptops auto-fit seamlessly
-          var finalZoom = Math.min(Math.max(scale, 0.62), 1.0);
-          document.documentElement.style.zoom = finalZoom;
-          if (document.body) {
-            document.body.style.zoom = finalZoom;
+          // Standard Large Desktop (1920x1080, 2K, 4K monitors): 100% full large scale
+          if (window.innerWidth >= 1680 && window.innerHeight >= 880) {
+            document.documentElement.style.zoom = '1.0';
+            if (document.body) document.body.style.zoom = '';
+          } else {
+            // Laptops & MacBooks: balanced comfortable MEDIUM scale (0.80 - 0.88)
+            // Perfectly positions the car and text without shrinking into a tiny miniature
+            var targetScale = Math.min(window.innerWidth / 1600, window.innerHeight / 850);
+            var finalZoom = Math.min(Math.max(targetScale, 0.80), 0.88);
+            document.documentElement.style.zoom = finalZoom;
+            if (document.body) document.body.style.zoom = '';
           }
         } else {
+          // Mobile & small tablets: native responsive layout
           document.documentElement.style.zoom = '';
-          if (document.body) {
-            document.body.style.zoom = '';
-          }
+          if (document.body) document.body.style.zoom = '';
         }
       }
 
