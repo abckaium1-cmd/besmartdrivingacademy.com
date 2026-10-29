@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Be Smart Driving Academy | Anchorage, AK Driving School</title>
   
+  <link rel="icon" type="image/png" href="./logo.png" />
+  
   <!-- Primary SEO -->
   <meta name="title" content="Be Smart Driving Academy | Anchorage, AK" />
   <meta name="description" content="State-approved driving academy in Anchorage, Alaska. Novice teen courses, 3rd-party DMV road tests, and winter ice driving with Butch Evans." />
@@ -93,6 +95,52 @@
       scrollbar-width: none;
     }
   </style>
+
+  <!-- ============================================================
+       DYNAMIC AUTO-FIT SCALE ENGINE (ALL LAPTOPS, MACBOOKS & DESKTOPS)
+       Automatically fits the 1080p desktop composition proportionally
+       across ANY laptop or MacBook screen (13", 14", 15", 16", etc.)
+       while leaving mobile devices (<1024px) completely native.
+  ============================================================ -->
+  <script>
+    (function() {
+      function applyDynamicViewportScale() {
+        if (window.innerWidth >= 1024) {
+          // Compare against standard 1080p desktop baseline (1920w x 960h safe area)
+          var scaleW = window.innerWidth / 1920;
+          var scaleH = window.innerHeight / 960;
+          var scale = Math.min(scaleW, scaleH);
+          // Clamp between 0.62 and 1.0 so desktop stays 100% and laptops auto-fit seamlessly
+          var finalZoom = Math.min(Math.max(scale, 0.62), 1.0);
+          document.documentElement.style.zoom = finalZoom;
+          if (document.body) {
+            document.body.style.zoom = finalZoom;
+          }
+        } else {
+          document.documentElement.style.zoom = '';
+          if (document.body) {
+            document.body.style.zoom = '';
+          }
+        }
+      }
+
+      applyDynamicViewportScale();
+      window.addEventListener('resize', applyDynamicViewportScale);
+      document.addEventListener('DOMContentLoaded', applyDynamicViewportScale);
+    })();
+  </script>
+  <script>
+    // Bulletproof image resolver: if ./filename fails, try ./assets/filename
+    document.addEventListener("error", function(e) {
+      if (e.target.tagName === "IMG") {
+        var src = e.target.getAttribute("src");
+        if (src && !src.includes("/assets/") && !e.target.dataset.fallbackTried) {
+          e.target.dataset.fallbackTried = "true";
+          e.target.src = "./assets/" + src.replace(/^\.\//, "");
+        }
+      }
+    }, true);
+  </script>
 </head>
 <body class="bg-[#0A1422] text-white antialiased">
 
@@ -107,7 +155,7 @@
       <!-- Left: Prominent Large Visual Logo (Directly on Page BG) -->
       <a href="#" class="flex items-center group py-1" aria-label="Be Smart Driving Academy Home">
         <img 
-          src="./assets/logo-dark-mode-vector.png" 
+          src="./logo-dark-mode-vector.png" 
           onerror="this.src='./assets/logo.png'"
           alt="Be Smart Driving Academy" 
           class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-md" 
@@ -252,7 +300,7 @@
     <div class="relative w-full mt-1 sm:mt-2 pb-0 flex justify-center items-end bg-[#0A1422] overflow-hidden">
       <div class="w-full max-w-[1560px] 2xl:max-w-[1720px] mx-auto px-0 sm:px-4 md:px-6">
         <img 
-          src="./assets/hero-car-besmart-fixed.png" 
+          src="./hero-car-besmart-fixed.png" 
           alt="Be Smart Driving Academy Official Training Car" 
           class="w-full h-auto object-contain object-bottom block"
         />
@@ -295,7 +343,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./assets/instructor-car.webp" 
+                src="./instructor-car.webp" 
                 alt="16-Hour Novice Driver Course in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -317,7 +365,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./assets/dmv-road-test-pass.jpg" 
+                src="./dmv-road-test-pass.jpg" 
                 alt="Official DMV Third-Party Road Test in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -339,7 +387,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./assets/winter-driving.webp" 
+                src="./winter-driving.webp" 
                 alt="Alaska Winter Driving Safety Training in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -361,7 +409,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./assets/classroom.webp" 
+                src="./classroom.webp" 
                 alt="Defensive Driving Class and Ticket Dismissal" 
                 class="w-full h-full object-cover"
               />
@@ -383,7 +431,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./assets/private-driving-lesson-real.jpg" 
+                src="./private-driving-lesson-real.jpg" 
                 alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -440,7 +488,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./assets/instructor-car.webp" 
+              src="./instructor-car.webp" 
               alt="16-Hour Novice Driver Course in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -471,7 +519,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./assets/dmv-road-test-pass.jpg" 
+              src="./dmv-road-test-pass.jpg" 
               alt="Official DMV Third-Party Road Test in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -502,7 +550,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./assets/winter-driving.webp" 
+              src="./winter-driving.webp" 
               alt="Alaska Winter Driving Safety Training in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -540,7 +588,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./assets/classroom.webp" 
+              src="./classroom.webp" 
               alt="Defensive Driving Class and Ticket Dismissal" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -571,7 +619,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./assets/private-driving-lesson-real.jpg" 
+              src="./private-driving-lesson-real.jpg" 
               alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -660,7 +708,7 @@
         <div class="lg:col-span-5 flex justify-center lg:justify-end my-auto">
           <div class="w-full max-w-[420px] h-[460px] sm:h-[520px] bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="./assets/butch-evans-real.jpg" 
+              src="./butch-evans-real.jpg" 
               alt="Butch Evans - Owner of Be Smart Driving Academy" 
               class="w-full h-full object-cover object-top"
             />
@@ -692,7 +740,7 @@
         <div class="lg:col-span-5 flex justify-center lg:justify-start my-auto">
           <div class="w-full max-w-[440px] aspect-square bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group hover:border-[#38BDF8] transition duration-300">
             <img 
-              src="./assets/be-smart-monument-sign.jpg" 
+              src="./be-smart-monument-sign.jpg" 
               alt="Be Smart Driving Academy Monument Signboard - Anchorage, Alaska" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -1804,7 +1852,7 @@
         <!-- Col 1: Brand & Facebook (5 Cols) -->
         <div class="lg:col-span-5 space-y-5">
           <div class="flex items-center gap-3">
-            <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-11 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+            <img src="./logo.png" alt="Be Smart Driving Academy" class="h-11 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
             <div>
               <span class="block font-headline font-bold text-lg tracking-tight uppercase text-white leading-none">BE SMART</span>
               <span class="block text-[11px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
@@ -1901,7 +1949,7 @@
         
         <!-- Logo & Business Name Centered -->
         <div class="flex items-center justify-center gap-3">
-          <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-10 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+          <img src="./logo.png" alt="Be Smart Driving Academy" class="h-10 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
           <div class="text-left">
             <span class="block font-headline font-bold text-base tracking-tight uppercase text-white leading-none">BE SMART</span>
             <span class="block text-[10px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
