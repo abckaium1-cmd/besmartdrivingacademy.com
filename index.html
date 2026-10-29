@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Be Smart Driving Academy | Anchorage, AK Driving School</title>
   
-  <link rel="icon" type="image/png" href="./logo.png" />
-  
   <!-- Primary SEO -->
   <meta name="title" content="Be Smart Driving Academy | Anchorage, AK" />
   <meta name="description" content="State-approved driving academy in Anchorage, Alaska. Novice teen courses, 3rd-party DMV road tests, and winter ice driving with Butch Evans." />
@@ -131,18 +129,6 @@
       document.addEventListener('DOMContentLoaded', applyDynamicViewportScale);
     })();
   </script>
-  <script>
-    // Bulletproof image resolver: if ./filename fails, try ./assets/filename
-    document.addEventListener("error", function(e) {
-      if (e.target.tagName === "IMG") {
-        var src = e.target.getAttribute("src");
-        if (src && !src.includes("/assets/") && !e.target.dataset.fallbackTried) {
-          e.target.dataset.fallbackTried = "true";
-          e.target.src = "./assets/" + src.replace(/^\.\//, "");
-        }
-      }
-    }, true);
-  </script>
 </head>
 <body class="bg-[#0A1422] text-white antialiased">
 
@@ -157,7 +143,7 @@
       <!-- Left: Prominent Large Visual Logo (Directly on Page BG) -->
       <a href="#" class="flex items-center group py-1" aria-label="Be Smart Driving Academy Home">
         <img 
-          src="./logo-dark-mode-vector.png" 
+          src="./assets/logo-dark-mode-vector.png" 
           onerror="this.src='./assets/logo.png'"
           alt="Be Smart Driving Academy" 
           class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-md" 
@@ -302,7 +288,7 @@
     <div class="relative w-full mt-1 sm:mt-2 pb-0 flex justify-center items-end bg-[#0A1422] overflow-hidden">
       <div class="w-full max-w-[1560px] 2xl:max-w-[1720px] mx-auto px-0 sm:px-4 md:px-6">
         <img 
-          src="./hero-car-besmart-fixed.png" 
+          src="./assets/hero-car-besmart-fixed.png" 
           alt="Be Smart Driving Academy Official Training Car" 
           class="w-full h-auto object-contain object-bottom block"
         />
@@ -319,7 +305,7 @@
        - Cards with Rounded Image -> Uppercase Title -> Centered Description -> Centered Solid Button
        - Top Row: 3 Cards | Bottom Row: 2 Cards Centered
   ========================================================== -->
-  <section id="courses" class="relative w-full py-16 sm:py-24 bg-[#0A1422] overflow-hidden">
+  <section id="courses" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] overflow-hidden">
     
     <!-- Constrained Container (max-w-[1240px] gives cards and images extra breathing room while staying vertical) -->
     <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -345,7 +331,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./instructor-car.webp" 
+                src="./assets/instructor-car.webp" 
                 alt="16-Hour Novice Driver Course in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -367,7 +353,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./dmv-road-test-pass.jpg" 
+                src="./assets/dmv-road-test-pass.jpg" 
                 alt="Official DMV Third-Party Road Test in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -389,7 +375,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./winter-driving.webp" 
+                src="./assets/winter-driving.webp" 
                 alt="Alaska Winter Driving Safety Training in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -411,7 +397,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./classroom.webp" 
+                src="./assets/classroom.webp" 
                 alt="Defensive Driving Class and Ticket Dismissal" 
                 class="w-full h-full object-cover"
               />
@@ -433,7 +419,7 @@
           <div class="w-full shrink-0 snap-center min-w-full bg-[#0B2544] border border-[#17325D] p-5 pb-8 flex flex-col justify-between rounded-2xl shadow-xl text-center">
             <div class="w-full h-56 mb-5 bg-[#061421] border border-[#17325D] rounded-xl overflow-hidden">
               <img 
-                src="./private-driving-lesson-real.jpg" 
+                src="./assets/private-driving-lesson-real.jpg" 
                 alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
                 class="w-full h-full object-cover"
               />
@@ -490,7 +476,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./instructor-car.webp" 
+              src="./assets/instructor-car.webp" 
               alt="16-Hour Novice Driver Course in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -521,7 +507,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./dmv-road-test-pass.jpg" 
+              src="./assets/dmv-road-test-pass.jpg" 
               alt="Official DMV Third-Party Road Test in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -552,7 +538,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./winter-driving.webp" 
+              src="./assets/winter-driving.webp" 
               alt="Alaska Winter Driving Safety Training in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -590,7 +576,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./classroom.webp" 
+              src="./assets/classroom.webp" 
               alt="Defensive Driving Class and Ticket Dismissal" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -621,7 +607,7 @@
           <!-- 1. IMAGE (Horizontal Landscape Image inside Vertical Card) -->
           <div class="w-full h-56 sm:h-64 mb-6 bg-[#061421] border border-[#17325D] overflow-hidden">
             <img 
-              src="./private-driving-lesson-real.jpg" 
+              src="./assets/private-driving-lesson-real.jpg" 
               alt="Private 1-on-1 Behind-The-Wheel Driving Lessons in Anchorage" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -679,23 +665,23 @@
   <!-- =========================================================
        SECTION 4: MEET THE OWNER (EXACT REFERENCE: TEXT LEFT, PHOTO RIGHT)
   ========================================================== -->
-  <section id="about" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+  <section id="about" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 items-center">
         
         <!-- Left Column: Text & Story (7 Cols, Center-to-Center Aligned) -->
         <div class="lg:col-span-7 flex flex-col justify-center items-center text-center my-auto">
           
-          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-[#38BDF8] tracking-tight uppercase leading-none mb-3 text-center">
+          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-[#38BDF8] tracking-tight uppercase leading-none mb-2 sm:mb-3 text-center">
             MEET THE OWNER
           </h2>
           
-          <div class="text-xl sm:text-2xl font-headline font-bold text-white uppercase tracking-wide mb-6 text-center">
+          <div class="text-xl sm:text-2xl font-headline font-bold text-white uppercase tracking-wide mb-4 sm:mb-5 2xl:mb-6 text-center">
             HEY, I'M BUTCH
           </div>
 
-          <div class="space-y-5 text-sm sm:text-base lg:text-lg text-[#CBD5E1] font-body leading-relaxed text-center max-w-2xl">
+          <div class="space-y-3.5 sm:space-y-4 xl:space-y-5 text-sm sm:text-base lg:text-lg text-[#CBD5E1] font-body leading-relaxed text-center max-w-2xl">
             <p>
               I'm a longtime Alaskan, and I've watched Anchorage grow into one of the most vibrant places for families to put down roots. That love for this community and keeping our roads safe is exactly why I started Be Smart Driving Academy over 20 years ago.
             </p>
@@ -708,9 +694,9 @@
 
         <!-- Right Column: Owner Portrait Photo (5 Cols, Vertically Centered, No Overlays) -->
         <div class="lg:col-span-5 flex justify-center lg:justify-end my-auto">
-          <div class="w-full max-w-[420px] h-[460px] sm:h-[520px] bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl">
+          <div class="w-full max-w-[340px] sm:max-w-[380px] 2xl:max-w-[420px] h-[390px] sm:h-[440px] 2xl:h-[520px] bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="./butch-evans-real.jpg" 
+              src="./assets/butch-evans-real.jpg" 
               alt="Butch Evans - Owner of Be Smart Driving Academy" 
               class="w-full h-full object-cover object-top"
             />
@@ -733,16 +719,16 @@
   <!-- =========================================================
        SECTION 5: WHY CHOOSE BE SMART DRIVING ACADEMY? (EXACT REFERENCE: SQUARE PHOTO LEFT, CHECKLIST RIGHT)
   ========================================================== -->
-  <section id="why-choose" class="relative w-full py-16 sm:py-24 bg-[#0A1422] overflow-hidden">
+  <section id="why-choose" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] overflow-hidden">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-16">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 items-center">
         
         <!-- Left Column: Real Academy Monument Signboard Photo (5 Cols, Perfect 1:1 Square, Vertically Centered) -->
         <div class="lg:col-span-5 flex justify-center lg:justify-start my-auto">
-          <div class="w-full max-w-[440px] aspect-square bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group hover:border-[#38BDF8] transition duration-300">
+          <div class="w-full max-w-[340px] sm:max-w-[380px] 2xl:max-w-[440px] aspect-square bg-[#061421] border-2 border-[#0E5A8A] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center group hover:border-[#38BDF8] transition duration-300">
             <img 
-              src="./be-smart-monument-sign.jpg" 
+              src="./assets/be-smart-monument-sign.jpg" 
               alt="Be Smart Driving Academy Monument Signboard - Anchorage, Alaska" 
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -752,12 +738,12 @@
         <!-- Right Column: Headline & Checklist (7 Cols, Center-to-Center Aligned) -->
         <div class="lg:col-span-7 flex flex-col justify-center items-center my-auto">
           
-          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight uppercase leading-tight mb-8 text-center">
+          <h2 class="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight uppercase leading-tight mb-5 sm:mb-6 2xl:mb-8 text-center">
             WHY CHOOSE <span class="text-[#38BDF8]">BE SMART DRIVING ACADEMY?</span>
           </h2>
 
           <!-- Checklist (Clean Center-Aligned Container) -->
-          <div class="space-y-4 sm:space-y-5 max-w-xl mx-auto">
+          <div class="space-y-3 sm:space-y-3.5 2xl:space-y-5 max-w-xl mx-auto">
             
             <!-- Item 1: Fair Pricing -->
             <div class="flex items-start gap-3.5">
@@ -833,7 +819,7 @@
        SECTION 6: FINAL FAST CALL / BOOK (MINIMAL 3-STEP PROGRESSIVE BOOKING)
        Strict Color Mandate: Solid Deep Navy #0A1422, Cards #0B2544, Inner Wells #061421, Accents #38BDF8 & #0E5A8A
   ========================================================== -->
-  <section id="fast-book" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+  <section id="fast-book" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
     <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Section Header (Extra-Wide Billboard Scale, Strict 2 Lines, Switzer Light Lowercase Appointment) -->
@@ -1248,7 +1234,7 @@
        SECTION 6: STUDENT AND PARENT REVIEWS (2-LAYER INFINITE MARQUEE)
        Strict Color Mandate: Solid Deep Navy #0A1422, Cards #0B2544, Accents #38BDF8, Stars #F59E0B
   ========================================================== -->
-  <section id="reviews" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+  <section id="reviews" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
     
     <!-- Section Header (Title with Blue Background on 'Reviews') -->
     <div class="text-center w-full max-w-4xl mx-auto mb-10 sm:mb-14 px-4">
@@ -1741,7 +1727,7 @@
   <!-- =========================================================
        SECTION 7: FREQUENTLY ASKED QUESTIONS (1-COLUMN DIRECT Q&A)
   ========================================================== -->
-  <section id="faq" class="relative w-full py-16 sm:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
+  <section id="faq" class="relative w-full py-12 sm:py-16 lg:py-14 2xl:py-24 bg-[#0A1422] border-t border-[#0B2A4A] overflow-hidden">
     <!-- Ambient Background Accents -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-25">
       <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#0E5A8A]/15 blur-3xl"></div>
@@ -1854,7 +1840,7 @@
         <!-- Col 1: Brand & Facebook (5 Cols) -->
         <div class="lg:col-span-5 space-y-5">
           <div class="flex items-center gap-3">
-            <img src="./logo.png" alt="Be Smart Driving Academy" class="h-11 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+            <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-11 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
             <div>
               <span class="block font-headline font-bold text-lg tracking-tight uppercase text-white leading-none">BE SMART</span>
               <span class="block text-[11px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
@@ -1951,7 +1937,7 @@
         
         <!-- Logo & Business Name Centered -->
         <div class="flex items-center justify-center gap-3">
-          <img src="./logo.png" alt="Be Smart Driving Academy" class="h-10 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
+          <img src="./assets/logo.png" alt="Be Smart Driving Academy" class="h-10 w-auto object-contain bg-white rounded-lg p-1 border border-[#0E5A8A]" />
           <div class="text-left">
             <span class="block font-headline font-bold text-base tracking-tight uppercase text-white leading-none">BE SMART</span>
             <span class="block text-[10px] font-bold tracking-widest text-[#38BDF8] uppercase mt-1">DRIVING ACADEMY LLC</span>
