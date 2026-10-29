@@ -112,10 +112,10 @@
             document.documentElement.style.zoom = '1.0';
             if (document.body) document.body.style.zoom = '';
           } else {
-            // Laptops & MacBooks: balanced comfortable MEDIUM scale (0.80 - 0.88)
-            // Perfectly positions the car and text without shrinking into a tiny miniature
-            var targetScale = Math.min(window.innerWidth / 1600, window.innerHeight / 850);
-            var finalZoom = Math.min(Math.max(targetScale, 0.80), 0.88);
+            // Laptops & MacBooks: balanced Medium-Plus scale (0.87 - 0.91)
+            // Just slightly larger than standard medium, but never full large
+            var targetScale = Math.min(window.innerWidth / 1536, window.innerHeight / 820);
+            var finalZoom = Math.min(Math.max(targetScale, 0.87), 0.91);
             document.documentElement.style.zoom = finalZoom;
             if (document.body) document.body.style.zoom = '';
           }
